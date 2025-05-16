@@ -8,3 +8,12 @@ A gui based AI application for monitoring and storing info of driver's drowsy st
 5. You will find a new pop-up window open. Click "Start Detection" for real-time monitoring. Click "Stop Detection" to stop.
 6.  Atlast, if you want to see the info of the detection time period, click "Show Statistics".
 7.  Thank you...
+
+
+Features
+👁 Eye tracking (blink detection using EAR)
+👄 Mouth detection (yawn detection using MAR)
+🧠 Head pose estimation (nodding/tilting detection)
+🚨 3-level alert system (visual/audio/emergency)
+📊 Data logging (CSV export with timestamps)
+🖥 Electron GUI with live camera preview
