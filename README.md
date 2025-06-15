@@ -1,19 +1,57 @@
-# Guarding-Vigilance-A-Smart-System-to-Monitor-and-Detect-Drowsiness-in-Real-Time
-A gui based AI application for monitoring and storing info of driver's drowsy state and warn them. Here is the steps to run my project.
+# DrowZense – Driver Drowsiness Detection System
 
-1. Just clone or download and unzip our resporatory.
-2. install the necessary modules used in python files in the system using pip.
-3. run the index.html file using "npx electron ." command in new terminal.
-4. Next, you will come across our webpage where you can explore about our project and creators. At the very bottom you will find a button "INITIALIZE SYSTEM". Click it.
-5. You will find a new pop-up window open. Click "Start Detection" for real-time monitoring. Click "Stop Detection" to stop.
-6.  Atlast, if you want to see the info of the detection time period, click "Show Statistics".
-7.  Thank you...
+DrowZense is a desktop application that detects driver drowsiness in real-time using a webcam. It uses facial landmarks to monitor eye closure, yawning, and head tilt, then gives alerts if signs of fatigue are detected.
 
+---
 
-Features
-👁 Eye tracking (blink detection using EAR)
-👄 Mouth detection (yawn detection using MAR)
-🧠 Head pose estimation (nodding/tilting detection)
-🚨 3-level alert system (visual/audio/emergency)
-📊 Data logging (CSV export with timestamps)
-🖥 Electron GUI with live camera preview
+## 🚀 Features
+
+- Detects prolonged eye closure (blinks)
+- Detects yawning and head tilting
+- Real-time video analysis using webcam
+- Voice alerts using text-to-speech (pyttsx3)
+- Custom GUI built using CustomTkinter
+- Statistics panel for recent alerts
+- Gemini AI integration to summarize alert data
+
+---
+
+## 🧰 Technologies Used
+
+- Python (OpenCV, MediaPipe, pyttsx3, Pandas, CustomTkinter)
+- Electron.js (Node.js + Chromium GUI)
+- HTML, CSS, JavaScript
+- Google Gemini API (for statistical analysis)
+
+---
+
+### Python Dependencies
+
+drowzense/
+│
+├── index.html           # Electron frontend
+├── main.js              # Electron app entry
+├── renderer.js          # Executes Python script from Electron
+├── script.js            # UI animations & scroll
+├── style.css            # App styling
+│
+├── python/
+│   ├── 1.py             # Main detection system (CustomTkinter GUI)
+│   ├── 2.py             # Gemini-based stats summary
+│   └── drowsiness_data.csv # Output data file
+│
+├── package.json         # Node app config
+└── README.md            # You're here!
+
+---
+
+### Output
+
+- Realtime webcam feed with status panel
+- Logs signs like:
+  - Prolonged blink
+  - Yawning
+- Head tilt
+- Alerts appear based on severity
+- Summary generated via Gemini (based on CSV data)
+
