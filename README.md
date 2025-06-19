@@ -1,4 +1,4 @@
-# DrowZense – Driver Drowsiness Detection System
+# Guarding Vigilance: A Smart System to Detect and Defeat Drowsiness in Real-Time
 
 DrowZense is a desktop application that detects driver drowsiness in real-time using a webcam. It uses facial landmarks to monitor eye closure, yawning, and head tilt, then gives alerts if signs of fatigue are detected.
 
